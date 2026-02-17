@@ -14,8 +14,29 @@ const About: React.FC = () => {
             <strong>Simple Map Tactics</strong> — a playground for ideas that
             combines video games, coding, DevOps, creating new things, and TTRPGs.
           </p>
+      
+          <div style={styles.profileLinks}>
+            <a
+              href="https://www.linkedin.com/in/dustin-jantz-720ab21a6/"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.profileLink}
+            >
+              LinkedIn
+            </a>
+            <span style={{ margin: "0 8px", color: "#9ca3af" }}>•</span>
+            <a
+              href="https://github.com/simaptics"
+              target="_blank"
+              rel="noreferrer"
+              style={styles.profileLink}
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </header>
+
 
       <main style={styles.container}>
         {/* About */}
@@ -152,9 +173,43 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
+        {/* Infrastructure */}
+        <section>
+          <h2 style={styles.sectionTitle}>AWS</h2>
+        
+          <p>
+            Simaptics runs on AWS and uses a mix of managed services and infrastructure
+            components to support the platform.
+          </p>
+        
+          <div style={styles.grid}>
+            <div style={styles.card}>
+              <h3>Core Services</h3>
+              <ul>
+                <li>Route 53 — DNS and domain management</li>
+                <li>Certificate Manager (ACM) — TLS certificates</li>
+                <li>S3 — Static frontend hosting and assets</li>
+                <li>EC2 — Compute for Kubernetes nodes and services</li>
+                <li>RDS (PostgreSQL) — Relational data storage</li>
+                <li>DynamoDB — Key-value / document data storage</li>
+              </ul>
+            </div>
+        
+            <div style={styles.card}>
+              <h3>CI/CD & Containers</h3>
+              <ul>
+                <li>CodeCommit — Source control</li>
+                <li>ECR — Container image registry</li>
+                <li>CodeBuild — Build pipelines</li>
+                <li>CodePipeline — Deployment automation</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
 
         <button style={styles.backButton} onClick={() => window.history.back()}>
-          ← Back
+          ← Back1
         </button>
       </main>
       <div style={styles.footerLink}>
@@ -288,6 +343,21 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: "#9ca3af",
     textDecoration: "none",
   },
+  
+  profileLinks: {
+    marginTop: 8,
+    display: "flex",
+    alignItems: "center",
+    gap: 4,
+    color: "#9ca3af",
+  },
+  
+  profileLink: {
+    color: "#38bdf8",
+    textDecoration: "none",
+    fontSize: "0.9rem",
+  },
+
 
 };
 

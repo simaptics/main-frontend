@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-  const BASE = `${process.env.REACT_APP_MAIN_HOST_URL}`;
-  const CRAW = `${process.env.REACT_APP_HOST_URL}`;
-  const AUTH = `${process.env.REACT_APP_AUTH_HOST_URL}`;
-  const DICE = `${process.env.REACT_APP_DICE_HOST_URL}`;
+  const BASE = `${import.meta.env.VITE_MAIN_HOST_URL}`;
+  const CRAW = `${import.meta.env.VITE_HOST_URL}`;
+  const AUTH = `${import.meta.env.VITE_AUTH_HOST_URL}`;
+  const DICE = `${import.meta.env.VITE_DICE_HOST_URL}`;
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const axiosInstance = axios.create({
-    baseURL: process.env.REACT_APP_BASE_HOST_URL,
+    baseURL: import.meta.env.VITE_BASE_HOST_URL,
     withCredentials: true,
     headers: { "Content-Type": "application/json" },
   });
