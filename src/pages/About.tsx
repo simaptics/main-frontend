@@ -140,6 +140,21 @@ const About: React.FC = () => {
               </a>
             </div>
           </div>
+
+          <div style={styles.card}>
+            <h3>Quest and Reward</h3>
+            <div style={styles.techRow}>TypeScript <img src="/images/icons8-typescript-50.png" alt="TypeScript" title="TypeScript" style={styles.techLogoInvert} /></div>
+            <div style={styles.linksRow}>
+              <a href="https://github.com/simaptics/dice-frontend" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+            <div style={styles.linksRow}>
+              <a href="https://questreward.simaptics.com" target="_blank" rel="noreferrer">
+                questreward.simaptics.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -149,25 +164,25 @@ const About: React.FC = () => {
           <h2 style={styles.sectionTitle}>Stack</h2>
           <div style={styles.grid}>
             <div style={styles.card}>
-              <h3>Kubernetes (kops) <img src="/images/icons8-kubernetes-48.png" alt="Flask" style={styles.techLogo} /></h3>
+              <h3>Kubernetes (kops) <img src="/images/icons8-kubernetes-48.png" alt="Kuberetes" style={styles.techLogo} /></h3>
               <ul>
-                <li>Python microservices <img src="/images/icons8-python-48.png" alt="Flask" style={styles.techLogo} /></li>
-                <li>Nginx Ingress <img src="/images/icons8-nginx-24.png" alt="Flask" style={styles.techLogo} /></li>
-                <li>Redis <img src="/images/icons8-redis-48.png" alt="Flask" style={styles.techLogo} /></li>
+                <li>Python microservices <img src="/images/icons8-python-48.png" alt="Python" style={styles.techLogo} /></li>
+                <li>Nginx Ingress <img src="/images/icons8-nginx-24.png" alt="Nginx" style={styles.techLogo} /></li>
+                <li>Redis <img src="/images/icons8-redis-48.png" alt="Reds" style={styles.techLogo} /></li>
               </ul>
             </div>
 
             <div style={styles.card}>
               <h3>Frontend</h3>
               <ul>
-                <li>S3 <img src="/images/icons8-s3-48.png" alt="Flask" style={styles.techLogo} /></li>
+                <li>S3 <img src="/images/icons8-s3-48.png" alt="s3" style={styles.techLogo} /></li>
               </ul>
             </div>
 
             <div style={styles.card}>
               <h3>Data</h3>
               <ul>
-                <li>RDS Postgres <img src="/images/icons8-postgres-48.png" alt="Flask" style={styles.techLogo} /></li>
+                <li>RDS Postgres <img src="/images/icons8-postgres-48.png" alt="Postgres" style={styles.techLogo} /></li>
                 <li>DynamoDB</li>
               </ul>
             </div>
@@ -208,20 +223,19 @@ const About: React.FC = () => {
         </section>
         {/* Other */}
         <section>
-          <h2 style={styles.sectionTitle}>Utility</h2>
-        
-          <p>
-            Simaptics projects which assist the main .
-          </p>
+          <h2 style={styles.sectionTitle}>Auxilary</h2>
         
           <div style={styles.grid}>
             <div style={styles.card}>
               <h3>Testing Infrastructure</h3>
               <ul>
-                <li></li>
-                <li>Infrastructure github repo link</li>
-                <li>Terraform</li>
-                <li>Helm</li>
+                <li>
+                  <a href="https://github.com/simaptics/infrastructure" target="_blank" rel="noreferrer">
+                    GitHub - Infrastructure
+                  </a>
+                </li>
+                <li>Terraform <img src="/images/icons8-terraform-48.png" alt="Terraform" style={styles.techLogo} /></li>
+                <li>Helm <img src="/images/Helm.png" alt="Helm" style={styles.techLogo} /></li>
               </ul>
             </div>
         
@@ -229,7 +243,7 @@ const About: React.FC = () => {
               <h3>Load Testing</h3>
               <ul>
                 <li>Coming Soon.</li>
-                <li>python locust</li>
+                <li>python locust <img src="/images/locust.jpg" alt="Locust" style={styles.techLogo} /></li>
               </ul>
             </div>
 
@@ -237,7 +251,7 @@ const About: React.FC = () => {
               <h3>Simulator</h3>
               <ul>
                 <li>Coming Soon.</li>
-                <li>Python</li>
+                <li>Python <img src="/images/icons8-python-48.png" alt="Python" style={styles.techLogo} /></li>
               </ul>
             </div>
           </div>

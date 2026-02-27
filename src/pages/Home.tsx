@@ -51,7 +51,31 @@ const Home: React.FC = () => {
     >
       {/* Top bar */}
       <div style={styles.topBar}>
-        <div style={{ fontWeight: "bold" }}>Simaptics</div>
+        <div style={{ fontWeight: "bold" }}>
+          {/* Left: Simaptics Home Button */}
+          <button
+            title="Simaptics Home"
+            onClick={() => (window.location.href = '/')}
+            style={{
+              fontSize: 18,
+              fontWeight: "bold",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              color: "black",
+            }}
+          >
+            <img
+            src={`/images/favicon.jpeg`} // change to your image path
+            alt="Simaptics"
+            style={{
+              width: "40px",
+              height: "40px",
+            }}
+          />
+          </button>
+
+        </div>
         <div style={{ position: "relative" }}>
           {!loggedIn ? (
             <button
