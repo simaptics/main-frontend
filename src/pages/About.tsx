@@ -173,7 +173,7 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
-        {/* Infrastructure */}
+        {/* AWS */}
         <section>
           <h2 style={styles.sectionTitle}>AWS</h2>
         
@@ -206,10 +206,46 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
+        {/* Other */}
+        <section>
+          <h2 style={styles.sectionTitle}>Utility</h2>
+        
+          <p>
+            Simaptics projects which assist the main .
+          </p>
+        
+          <div style={styles.grid}>
+            <div style={styles.card}>
+              <h3>Testing Infrastructure</h3>
+              <ul>
+                <li></li>
+                <li>Infrastructure github repo link</li>
+                <li>Terraform</li>
+                <li>Helm</li>
+              </ul>
+            </div>
+        
+            <div style={styles.card}>
+              <h3>Load Testing</h3>
+              <ul>
+                <li>Coming Soon.</li>
+                <li>python locust</li></>
+              </ul>
+            </div>
+
+            <div style={styles.card}>
+              <h3>Simulator</h3>
+              <ul>
+                <li>Coming Soon.</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
 
         <button style={styles.backButton} onClick={() => window.history.back()}>
-          ← Back1
+          ← Back
         </button>
       </main>
       <div style={styles.footerLink}>
