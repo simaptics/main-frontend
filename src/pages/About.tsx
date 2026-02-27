@@ -229,7 +229,7 @@ const About: React.FC = () => {
               <h3>Load Testing</h3>
               <ul>
                 <li>Coming Soon.</li>
-                <li>python locust</li></>
+                <li>python locust</li>
               </ul>
             </div>
 
