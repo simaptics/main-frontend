@@ -145,7 +145,7 @@ const About: React.FC = () => {
             <h3>Quest and Reward</h3>
             <div style={styles.techRow}>TypeScript <img src="/images/icons8-typescript-50.png" alt="TypeScript" title="TypeScript" style={styles.techLogoInvert} /></div>
             <div style={styles.linksRow}>
-              <a href="https://github.com/simaptics/dice-frontend" target="_blank" rel="noreferrer">
+              <a href="https://github.com/simaptics/quests_and_rewards" target="_blank" rel="noreferrer">
                 GitHub
               </a>
             </div>
