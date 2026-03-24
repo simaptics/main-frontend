@@ -238,19 +238,15 @@ const About: React.FC = () => {
                 <li>Helm <img src="/images/Helm.png" alt="Helm" style={styles.techLogo} /></li>
               </ul>
             </div>
-        
-            <div style={styles.card}>
-              <h3>Load Testing</h3>
-              <ul>
-                <li>Coming Soon.</li>
-                <li>python locust <img src="/images/locust.jpg" alt="Locust" style={styles.techLogo} /></li>
-              </ul>
-            </div>
 
             <div style={styles.card}>
               <h3>Simulator</h3>
               <ul>
-                <li>Coming Soon.</li>
+                <li>
+                  <a href="https://github.com/simaptics/simulator" target="_blank" rel="noreferrer">
+                    GitHub - Simulator
+                  </a>
+                </li>
                 <li>Python <img src="/images/icons8-python-48.png" alt="Python" style={styles.techLogo} /></li>
               </ul>
             </div>
