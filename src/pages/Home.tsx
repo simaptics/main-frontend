@@ -10,6 +10,7 @@ const Home: React.FC = () => {
   const AUTH = `${import.meta.env.VITE_AUTH_HOST_URL}`;
   const DICE = `${import.meta.env.VITE_DICE_HOST_URL}`;
   const QNR = `${import.meta.env.VITE_QNR_HOST_URL}`;
+  const DELVER = `${import.meta.env.VITE_DELVER_HOST_URL}`;
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -123,6 +124,15 @@ const Home: React.FC = () => {
         onClick={() => (window.location.href = `${CRAW}`)}
       >
         Crawler
+      </button>
+
+      <button
+        style={styles.button}
+        onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.40)")}
+        onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.25)")}
+        onClick={() => (window.location.href = `${DELVER}`)}
+      >
+        Delver
       </button>
 
       <button
